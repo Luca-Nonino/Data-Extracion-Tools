@@ -1,0 +1,517 @@
+Nossos serviços estão apresentando instabilidade no momento. Algumas informações podem não estar disponíveis.
+
+#seriehistorica20185494533716
+
+#tabelasidra2018531423121
+
+#tabelasidra201852132433770
+
+#tabelasidra20185213352858
+
+
+
+As informações a seguir descrevem os metadados estatísticos, que são o conjunto de conceitos, métodos e aspectos relacionados às estatísticas, e são informações necessárias para compreender as características e a qualidade das estatísticas e interpretá-las corretamente.
+
+Tipo de material: Periódico
+Ano: 1987-
+
+Tipo de material: Livro
+Ano: 2016
+
+O Sistema Nacional de Índices de Preços ao Consumidor – SNIPC produz contínua e sistematicamente o Índice Nacional de Preços ao Consumidor Amplo – IPCA que tem por objetivo medir a inflação de um conjunto de produtos e serviços comercializados no varejo, referentes ao consumo pessoal das famílias. Esta faixa de renda foi criada com o objetivo de garantir uma cobertura de 90% das famílias pertencentes às áreas urbanas de cobertura do Sistema Nacional de Índices de Preços ao Consumidor - SNIPC.
+
+Esse índice de preços tem como unidade de coleta estabelecimentos comerciais e de prestação de serviços, concessionária de serviços públicos e intenet e sua coleta estende-se, em geral, do dia 01 a 30 do mês de referência.
+
+Atualmente, a população-objetivo do IPCA abrange as famílias com rendimentos de 1 a 40 salários mínimos, qualquer que seja a fonte, residentes nas áreas urbanas das regiões de abrangência do SNIPC, as quais são: regiões metropolitanas de Belém, Fortaleza, Recife, Salvador, Belo Horizonte, Vitória, Rio de Janeiro, São Paulo, Curitiba, Porto Alegre, além do Distrito Federal e dos municípios de Goiânia, Campo Grande, Rio Branco, São Luís e Aracaju.
+
+Calendário de Coleta - Ano/2024
+
+
+
+Informações Adicionais
+
+Tabela completa de séries históricas
+
+#tabelasidra201853141014857
+
+
+
+#tabelasidra20171059636838
+
+
+
+Metodologia de geração do IPCA dessazonalizado.
+
+Metodologia de cálculo da inflação dos subitens do SNIPC Empregado Doméstico e Mão de Obra para Reparos Domésticos a partir das informações de rendimentos da PNAD Contínua.
+
+Fonte: IBGE, Diretoria de Pesquisas, Coordenação de Índices de Preços.
+
+1
+IBGE - População residente urbana (POF 2017-2018).
+
+2
+IBGE - Rendimento Monetário mensal familiar disponível(POF 2017-2018).
+
+Fonte: IBGE, Diretoria de Pesquisas, Coordenação de Índices de Preços.
+
+
+
+
+
+O Índice Nacional de Preços ao Consumidor Amplo (IPCA) de julho foi de 0,38%, ficando 0,17 ponto percentual...
+
+09/08/2024
+
+
+
+Em julho, o Índice Nacional de Preços ao Consumidor Amplo (IPCA) foi a 0,38%, ficando 0,17 ponto percentual...
+
+09/08/2024
+
+
+
+O Índice Nacional de Preços ao Consumidor Amplo (IPCA) de junho teve alta de 0,21%, ficando 0,25 ponto...
+
+10/07/2024
+
+
+
+A inflação do país foi de 0,21% em junho, desacelerando em relação ao mês de maio, quando foi de 0,46%....
+
+10/07/2024
+
+
+
+O Índice Nacional de Preços ao Consumidor Amplo (IPCA) de maio foi de 0,46% e ficou 0,08 ponto percentual...
+
+11/06/2024
+
+
+
+A inflação do país foi de 0,46% em maio, acelerando em relação ao mês anterior (0,38%). Esse resultado...
+
+11/06/2024
+
+
+
+O Índice Nacional de Preços ao Consumidor Amplo (IPCA) de abril foi de 0,38% e ficou 0,22 ponto percentual...
+
+10/05/2024
+
+
+
+O Índice Nacional de Preços ao Consumidor Amplo (IPCA) foi de 0,38% em abril, 0,22 ponto percentual (p.p.)...
+
+10/05/2024
+
+
+
+A inflação do país desacelerou em março, registrando alta de 0,16%, 0,67 ponto percentual (p.p) menor...
+
+10/04/2024
+
+
+
+O Índice Nacional de Preços ao Consumidor Amplo (IPCA) de março foi de 0,16% e ficou 0,67 ponto percentual...
+
+10/04/2024
+
+Data de publicação:
+16/02/2024
+Descrição:
+Erro no resultado do subitem “Gás encanado” para a região metropolitana de São Paulo. Foi incorporada variação de 2,27% para o IPCA e de 2,28% para o INPC, quando o correto seria 1,01% para o IPCA e 1,00% para o INPC.
+Ações:
+A correção do erro ocorrido no subitem “gás encanado” no IPCA/INPC de janeiro de 2024 será incorporada no próximo IPCA/INPC de fevereiro, para o referido subitem na região metropolitana de São Paulo.
+
+Descrição:
+Erro no resultado do subitem “Gás encanado” para a região metropolitana de São Paulo. Foi incorporada variação de 2,27% para o IPCA e de 2,28% para o INPC, quando o correto seria 1,01% para o IPCA e 1,00% para o INPC.
+
+Ações:
+A correção do erro ocorrido no subitem “gás encanado” no IPCA/INPC de janeiro de 2024 será incorporada no próximo IPCA/INPC de fevereiro, para o referido subitem na região metropolitana de São Paulo.
+
+Data de publicação:
+15/12/2023
+Descrição:
+No texto do release da Agência de Notícias do IBGE e na Publicação Completa em formato PDF, no parágrafo do grupo Habitação, na parte referente ao reajuste praticado e divulgado por uma das concessionárias em Porto Alegre, onde se lê “
+de 1,41% em uma das concessionárias pesquisadas, a partir de 22 de novembro
+”, leia-se: “
+de -1,41% em uma das concessionárias pesquisadas, a partir de 22 de novembro
+”.
+Ressalta-se que o reajuste médio de -1,41% aplicado pela concessionária foi devidamente incorporado no IPCA, conforme metodologia vigente. Portanto, não houve erro na incorporação do reajuste nem na divulgação dos dados, tão somente na redação do texto.
+Ações:
+O texto do release na Agência de Notícias do IBGE foi corrigido, bem como o arquivo da Publicação Completa, que foi corrigido e substituído no Portal do IBGE.
+
+Descrição:
+No texto do release da Agência de Notícias do IBGE e na Publicação Completa em formato PDF, no parágrafo do grupo Habitação, na parte referente ao reajuste praticado e divulgado por uma das concessionárias em Porto Alegre, onde se lê “
+de 1,41% em uma das concessionárias pesquisadas, a partir de 22 de novembro
+”, leia-se: “
+de -1,41% em uma das concessionárias pesquisadas, a partir de 22 de novembro
+”.
+
+Ressalta-se que o reajuste médio de -1,41% aplicado pela concessionária foi devidamente incorporado no IPCA, conforme metodologia vigente. Portanto, não houve erro na incorporação do reajuste nem na divulgação dos dados, tão somente na redação do texto.
+
+Ações:
+O texto do release na Agência de Notícias do IBGE foi corrigido, bem como o arquivo da Publicação Completa, que foi corrigido e substituído no Portal do IBGE.
+
+Data de publicação:
+23/02/2023
+Descrição:
+Os percentuais referentes aos pesos de alguns grupos, subgrupos, itens e subitens do IPCA nos meses de maio e julho de 2011 estavam incorretos.
+Ações:
+Os arquivos foram corrigidos e substituídos.
+
+Descrição:
+Os percentuais referentes aos pesos de alguns grupos, subgrupos, itens e subitens do IPCA nos meses de maio e julho de 2011 estavam incorretos.
+
+Ações:
+Os arquivos foram corrigidos e substituídos.
+
+Data de publicação:
+06/11/2020
+Descrição:
+No texto do release da Agência de Notícias do IBGE e na Publicação Completa em formato PDF, na parte referente ao grupo Habitação no IPCA, foi divulgado inicialmente o percentual de 0,37% para a variação mensal do grupo, quando o valor correto é de 0,36%.
+Ações:
+O
+texto do release
+na Agência de Notícias do IBGE foi corrigido, bem como o
+arquivo da Publicação Completa
+, que foi corrigido e substituído no Portal do IBGE.
+
+Descrição:
+No texto do release da Agência de Notícias do IBGE e na Publicação Completa em formato PDF, na parte referente ao grupo Habitação no IPCA, foi divulgado inicialmente o percentual de 0,37% para a variação mensal do grupo, quando o valor correto é de 0,36%.
+
+Ações:
+O
+texto do release
+na Agência de Notícias do IBGE foi corrigido, bem como o
+arquivo da Publicação Completa
+, que foi corrigido e substituído no Portal do IBGE.
+
+Data de publicação:
+07/02/2020
+Descrição:
+Houve um problema na atualização do filtro de subitens para as tabelas SIDRA 7060 (IPCA) e 7063 (INPC), ocasionando a seleção incompleta das 9h às 11h do dia 07/02/2020.
+Ações:
+A relação de subitens do filtro foi atualizada às 11h.
+
+Descrição:
+Houve um problema na atualização do filtro de subitens para as tabelas SIDRA 7060 (IPCA) e 7063 (INPC), ocasionando a seleção incompleta das 9h às 11h do dia 07/02/2020.
+Ações:
+A relação de subitens do filtro foi atualizada às 11h.
+
+Data de publicação:
+07/11/2019
+Descrição:
+Devido a problemas operacionais, o SIDRA não foi totalmente carregado com as informações do INPC e do IPCA de outubro de 2019 às 9h. A carga completa foi feita às 11h20min.
+Ações:
+As informações foram carregadas no SIDRA às 11h20min.
+
+Descrição:
+Devido a problemas operacionais, o SIDRA não foi totalmente carregado com as informações do INPC e do IPCA de outubro de 2019 às 9h. A carga completa foi feita às 11h20min.
+Ações:
+As informações foram carregadas no SIDRA às 11h20min.
+
+Data de publicação:
+24/05/2019
+Descrição:
+Erro detectado nos arquivos de resultados por subitem, na planilha de acumulados em 12 meses, onde constavam inconsistências nas variações nacionais de alguns subitens exclusivamente pertencentes às áreas que foram incorporadas ao índice em maio de 2018.
+Ações:
+Os arquivos foram corrigidos e substituídos e uma observação de atualização foi incluída na página de acesso ao arquivo.
+
+Descrição:
+Erro detectado nos arquivos de resultados por subitem, na planilha de acumulados em 12 meses, onde constavam inconsistências nas variações nacionais de alguns subitens exclusivamente pertencentes às áreas que foram incorporadas ao índice em maio de 2018.
+Ações:
+Os arquivos foram corrigidos e substituídos e uma observação de atualização foi incluída na página de acesso ao arquivo.
+
+Data de publicação:
+21/03/2018
+Descrição
+:  O SNIPC se manterá com a atual abrangência geográfica até abril de 2018, e não março de 2018. As ponderações do IPCA e do INPC, apresentadas nos gráficos, são referentes às atuais e às vigentes a partir de maio de 2018, e não de junho de 2018.
+Ações
+: O arquivo foi substituído no Portal do IBGE.
+
+Descrição
+:  O SNIPC se manterá com a atual abrangência geográfica até abril de 2018, e não março de 2018. As ponderações do IPCA e do INPC, apresentadas nos gráficos, são referentes às atuais e às vigentes a partir de maio de 2018, e não de junho de 2018.
+
+Ações
+: O arquivo foi substituído no Portal do IBGE.
+
+Data de publicação:
+10/05/2017
+Descrição:
+No texto da notícia na Sala de Imprensa e na Publicação Completa em formato PDF, na parte referente ao INPC, foi divulgado inicialmente o percentual de 0,58% para a variação mensal dos produtos alimentícios, quando o valor correto é de 0,54%.
+Ações:
+O texto da notícia na Sala de Imprensa foi corrigido (Link abaixo), bem como o arquivo da Publicação Completa (Link 2 abaixo), que foi corrigido e substituído no Portal do IBGE.
+
+Descrição:
+No texto da notícia na Sala de Imprensa e na Publicação Completa em formato PDF, na parte referente ao INPC, foi divulgado inicialmente o percentual de 0,58% para a variação mensal dos produtos alimentícios, quando o valor correto é de 0,54%.
+
+Ações:
+O texto da notícia na Sala de Imprensa foi corrigido (Link abaixo), bem como o arquivo da Publicação Completa (Link 2 abaixo), que foi corrigido e substituído no Portal do IBGE.
+
+Data de publicação:
+09/11/2016
+Descrição:
+O arquivo referente aos Resultados por Subitem - IPCA (outubro de 2016) disponível no portal às 9:00h estava corrompido, impedindo a visualização da planilha.
+Ações:
+O arquivo foi substituído no portal às 9:10h.
+
+Descrição:
+O arquivo referente aos Resultados por Subitem - IPCA (outubro de 2016) disponível no portal às 9:00h estava corrompido, impedindo a visualização da planilha.
+
+Ações:
+O arquivo foi substituído no portal às 9:10h.
+
+Data de publicação:
+06/05/2016
+Descrição:
+Erro detectado no arquivo de resultados por subitem, na planilha de pesos onde constavam os dados de março e não de abril.
+Ações:
+O arquivo foi corrigido e substituído e uma observação de atualização foi incluída na página de acesso ao arquivo.
+
+Descrição:
+Erro detectado no arquivo de resultados por subitem, na planilha de pesos onde constavam os dados de março e não de abril.
+
+Ações:
+O arquivo foi corrigido e substituído e uma observação de atualização foi incluída na página de acesso ao arquivo.
+
+Data de publicação:
+08/04/2016
+Descrição:
+Substituição da tabela de resultados do mês de fevereiro/2016 do IPCA/INPC.
+Ações:
+O arquivo foi corrigido e substituído e uma observação de atualização foi incluída na página de acesso ao arquivo.
+
+Descrição:
+Substituição da tabela de resultados do mês de fevereiro/2016 do IPCA/INPC.
+
+Ações:
+O arquivo foi corrigido e substituído e uma observação de atualização foi incluída na página de acesso ao arquivo.
+
+Data de publicação:
+08/01/2016
+Descrição:
+Substituição dos arquivos de Séries Históricas IPCA, INPC, IPCA-15 e IPCA-E, os resultados de alguns meses foram padronizados para duas casas decimais.
+Ações:
+Os arquivos foram corrigidos e substituídos e uma observação de atualização foi incluída na página de acesso aos arquivos.
+
+Descrição:
+Substituição dos arquivos de Séries Históricas IPCA, INPC, IPCA-15 e IPCA-E, os resultados de alguns meses foram padronizados para duas casas decimais.
+
+Ações:
+Os arquivos foram corrigidos e substituídos e uma observação de atualização foi incluída na página de acesso aos arquivos.
+
+Data de publicação:
+13/08/2015
+Descrição:
+Substituição dos arquivos de Séries Históricas IPCA, INPC, IPCA-15 e IPCA-E, os resultados de alguns meses foram padronizados para duas casas decimais
+Ações:
+Os arquivos foram corrigidos e substituídos e uma observação de atualização foi incluída na página de acesso aos arquivos.
+
+Descrição:
+Substituição dos arquivos de Séries Históricas IPCA, INPC, IPCA-15 e IPCA-E, os resultados de alguns meses foram padronizados para duas casas decimais
+
+Ações:
+Os arquivos foram corrigidos e substituídos e uma observação de atualização foi incluída na página de acesso aos arquivos.
+
+Data de publicação:
+07/08/2015
+Descrição:
+O erro ao convereter a planilha do formato xls para o shtm, no resultado do IPCA de julho de Goiânia e Vitória
+Ações:
+Os arquivos foram corrigidos e substituídos e uma observação de atualização foi incluída na página de acesso aos arquivos.
+
+Descrição:
+O erro ao convereter a planilha do formato xls para o shtm, no resultado do IPCA de julho de Goiânia e Vitória
+
+Ações:
+Os arquivos foram corrigidos e substituídos e uma observação de atualização foi incluída na página de acesso aos arquivos.
+
+
+
+Ministério do Planejamento, Orçamento e Gestão
+GABINETE DO MINISTRO
+PORTARIA Nº 355, DE 5 DE NOVEMBRO DE 2007
+(Publicada no Diário Oficial da União nº 213, Seção 1, de 06.11.2007)
+
+
+
+O MINISTRO DE ESTADO DO PLANEJAMENTO, ORÇAMENTO E GESTÃO, no uso das atribuições que lhe confere o inciso II, do artigo 87 da Constituição Federal, resolve:
+
+Art. 1º - A divulgação dos resultados de indicadores conjunturais produzidos pela Fundação Instituto Brasileiro de Geografia e Estatística - IBGE seguirá as seguintes etapas:
+
+I - às sete horas do dia da divulgação serão encaminhados os resultados, acompanhados de um sumário-executivo elaborado pelo IBGE, para as autoridades da lista de precedência;
+
+II - às nove horas do dia da divulgação serão encaminhados os resultados para os órgãos de imprensa e disseminados na Internet, através do sítio https://www.ibge.gov.br.
+
+§ 1º. Os técnicos do IBGE estarão disponíveis para prestar esclarecimentos aos usuários sobre os resultados da pesquisa divulgada a partir do encaminhamento de que trata o inciso II do caput.
+
+§ 2º. O disposto nesta portaria aplica-se a qualquer indicador conjuntural produzido pelo IBGE, especialmente aos seguintes:
+
+I - Índice Nacional de Preços ao Consumidor (INPC);
+
+II - Índice Nacional de Preços ao Consumidor Amplo (IPCA);
+
+III - Índice Nacional de Preços ao Consumidor Amplo - Especial (IPCA-E);
+
+IV - Índice Nacional de Preços ao Consumidor Amplo (IPCA-15);
+
+V - Pesquisa Mensal de Emprego (PME);
+
+VI - Contas Nacionais Trimestrais;
+
+VII - Pesquisa Industrial Mensal - Produção Física Brasil (PIM-PF Brasil);
+
+VIII - Pesquisa Industrial Mensal - Produção Física Regional (PIM-PF Regional);
+
+IX - Pesquisa Industrial Mensal de Emprego e Salário - (PIMES);
+
+X - Pesquisa Mensal de Comércio (PMC);
+
+XI - Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (SINAPI);
+
+XII - Conjuntura Agropecuária (Levantamento Sistemático da Produção Agrícola - mensal; Pesquisa Trimestral de Abate de Animais; Pesquisa Trimestral de Leite; Pesquisa Trimestral de Produção de Ovos de Galinha; Pesquisa Trimestral do Couro).
+
+Art. 2° - A relação das autoridades constantes da lista de precedência específica a cada pesquisa de indicadores conjunturais, será divulgada por intermédio de Nota Oficial da Instituição e disseminada no portal do IBGE na Internet, através do sítio https://www.ibge.gov.br
+
+Art. 3º - As autoridades constantes da lista de precedência deverão observar o mais rigoroso sigilo das informações referentes aos indicadores de que trata esta Portaria, nos termos do disposto na Lei nº 8.112, de 11 de dezembro de 1990.
+
+Art. 4º - Revogam-se as Portarias nº 164/MP, de 20 de dezembro de 1999, e nº 167/MP, de 5 de setembro de 2003.
+
+Art. 5º - Esta Portaria entra em vigor na data de sua publicação.
+
+
+
+PAULO BERNARDO SILVA
+
+O IBGE divulga a relação das autoridades que recebem com precedência os resultados das pesquisas conjunturais produzidas por esta Instituição:
+
+Ministra do Planejamento e Orçamento – Simone Nassar Tebet Rocha
+
+
+
+
+
+Ministro da Fazenda – Fernando Haddad
+
+
+
+
+
+Ministro do Desenvolvimento, Indústria, Comércio e Serviços - Geraldo José Rodrigues Alckmin Filho
+
+
+
+
+
+
+
+
+
+
+
+
+
+Presidente do Banco Central - Roberto de Oliveira Campos Neto
+
+
+
+Presidente da Caixa Econômica Federal - Carlos Antônio Vieira Fernandes
+
+
+
+Chefe de Gabinete Adjunto de Informações em Apoio à Decisão do Gabinete Pessoal do Presidente da República - Sandra Márcia Chagas Brandão
+
+
+
+Presidente do IBGE
+Marcio Pochmann
+Atualizado em 1º de dezembro de 2023
+
+
+
+
+
+Ministério do Planejamento, Orçamento e Gestão
+GABINETE DO MINISTRO
+PORTARIA Nº 15, DE 27 DE JANEIRO DE 2005
+(Publicada no Diário Oficial da União edição número 20 de 28/01/2005)
+
+
+
+O MINISTRO DE ESTADO DO PLANEJAMENTO, ORÇAMENTO E GESTÃO, INTERINO, no uso das atribuições que lhe confere o art. 87, parágrafo único, incisos I e II, da Constituição e considerando o disposto no art. 27, inciso XVII, alínea "c", da Lei nº 10.683, de 28 de maio de 2003, resolve:
+
+Art. 1º - Disciplinar os procedimentos a serem observados na divulgação dos resultados de indicadores estruturais produzidos pela Fundação Instituto Brasileiro de Geografia e Estatística - IBGE.
+
+Art. 2º Os resultados serão encaminhados pela Fundação Instituto Brasileiro de Geografia e Estatística - IBGE ao Ministro do Planejamento, Orçamento e Gestão, com antecedência mínima de quarenta e oito horas do horário fixado no art. 3º, inciso I, desta Portaria.
+
+Art. 3º No dia da divulgação dos resultados dos indicadores de que trata esta Portaria, serão observados:
+
+I - liberação para a imprensa e disponibilização pela Internet, no endereço: (https://www.ibge.gov.br), às 10 horas;
+
+II - os técnicos do IBGE somente poderão prestar esclarecimentos sobre os resultados dos indicadores estruturais após a liberação e publicação na forma do inciso I.
+
+Art. 4º Os servidores que tenham conhecimento prévio dos resultados deverão manter rigoroso sigilo, sob pena de responsabilidade nos termos da Lei nº 8.112, de 11 de dezembro de 1990.
+
+Art. 5º Esta Portaria entra em vigor na data de sua publicação.
+
+
+
+NELSON MACHADO
+
+
+
+
+
+SIDRA | Banco de Tabelas Estatísticas
+
+IBGE Explica | Inflação
+
+IBGE Explica | Inflação
+
+IBGE Explica | Inflação
+
+Acessar publicação na biblioteca
+
+A Calculadora do IPCA permite atualizar um valor pela variação do Índice de Preços ao Consumidor Amplo (IPCA) entre duas datas. Através desse cálculo, é possível simular a correção de uma quantia numa determinada data utilizando o índice de preço e saber o valor correspondente numa outra data.
+Ver descrição completa.
+
+As conversões podem ser feitas desde o início da série histórica do IPCA, em janeiro de 1980, quando a moeda em vigor era o Cruzeiro(Cr$).
+
+Cabe destacar que o cálculo deve ser considerado apenas como referência e não como valor oficial, uma vez que, dependendo da finalidade da consulta do valor, outros custos não considerados pela Calculadora podem estar envolvidos, tais como seguros e outros encargos operacionais.
+
+O valor na data final é de
+R$
+
+O percentual total no intervalo é de
+%
+
+Esta calculadora usa o período entre o dia 1 do mês inicial e o último dia do mês final.
+
+O valor corrigido é obtido a partir do produto entre o valor inicial e o resultado da divisão do número-índice do mês final pelo número-índice do mês anterior ao mês inicial. O resultado desta divisão é o fator que corresponde à variação acumulada do IPCA no período desejado.
+Exemplo: Correção do valor de R$ 1.000 entre setembro de 2012 e março de 2020
+
+Usuário deve informar:
+Mês inicial:
+09/2012
+Mês final:
+03/2020
+Valor na data inicial:
+1.000,00
+
+Número-índice de março de 2020:
+5.348,49
+Número-índice de agosto de 2012:
+3.512,04
+Fator de correção:
+5.348,49 / 3.512,04 = 1,5229
+Valor corrigido:
+1.000 x 1,5229 = R$ 1.522,90.
+
+Observação 1: A série histórica de números-índices do IPCA pode ser encontrada na tabela 1737 do Sistema IBGE de Recuperação Automática (SIDRA), disponível no endereço abaixo:
+https://sidra.ibge.gov.br/tabela/1737
+
+Observação 2: Caso a data inicial informada seja anterior ao início do Plano Real, o valor a ser corrigido deve ter como referência a unidade monetária vigente à época. Por exemplo, caso o mês inicial informado seja maio de 1988 (05/1988), a calculadora considerará que o valor inicial informado é em Cruzados (Cz$).
+
+Nós utilizamos cookies para melhorar sua experiência de navegação no portal. Para saber mais sobre como tratamos os dados pessoais, consulte nossa
+Política de Privacidade.
