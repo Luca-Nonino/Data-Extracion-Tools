@@ -1,7 +1,3 @@
-Aqui está o arquivo README para o script combinado que processa os dados de exportação do INDEC:
-
----
-
 # Processamento de Dados de Exportação do INDEC com R
 
 ## Visão Geral
@@ -104,7 +100,3 @@ Se precisar adicionar novos dados auxiliares ou modificar o processamento de dad
 ## Considerações Finais
 
 Este script foi desenvolvido para automatizar o processo de download e processamento dos dados de exportação do INDEC, permitindo que você se concentre na análise dos dados. O uso de pacotes R como `httr`, `readr`, `jsonlite` e `dplyr` garante que o fluxo de trabalho seja eficiente e fácil de adaptar a novos requisitos.
-
----
-
-Este README deve fornecer todas as instruções necessárias para executar e personalizar o projeto para suas necessidades.
