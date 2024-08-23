@@ -1,83 +1,4 @@
-# Pacotes necessários
-library(httr)     # Para requisições HTTP
-library(readr)    # Para ler e escrever arquivos CSV
-library(readxl)   # Para ler arquivos Excel
-library(jsonlite) # Para manipular dados JSON
-library(stringr)  # Para manipulação de strings
-library(dplyr)    # Para manipulação de data frames
-library(tidyr)    # Para limpeza de dados
-library(lubridate) # Para manipulação de datas e horas
-
-# Diretórios e Caminhos
-BASE_DIR <- normalizePath(file.path(dirname(rstudioapi::getActiveDocumentContext()$path), '..', '..', '..'))
-DATA_DIR <- file.path(BASE_DIR, 'data', 'indec')
-
-# Garante que o diretório exista
-if (!dir.exists(DATA_DIR)) {
-  dir.create(DATA_DIR, recursive = TRUE)
-}
-
-# Função para baixar e extrair os dados de exportação para um ano específico
-download_and_extract <- function(year, output_dir) {
-  url <- sprintf("https://comex.indec.gob.ar/files/zips/exports_%d_M.zip", year)
-  response <- GET(url)
-  
-  if (status_code(response) != 200) {
-    stop("Falha no download do arquivo ZIP.")
-  }
-  
-  temp <- tempfile()
-  writeBin(content(response, "raw"), temp)
-  unzip(temp, exdir = output_dir)
-  unlink(temp)
-  
-  files <- list.files(output_dir, pattern = sprintf("expom%s.csv|exponm%s.csv|expopm%s.csv", substr(year, 3, 4), substr(year, 3, 4), substr(year, 3, 4)), full.names = TRUE)
-  
-  if (length(files) > 0) {
-    new_file_path <- file.path(output_dir, sprintf("%d_%s", year, basename(files[1])))
-    file.rename(files[1], new_file_path)
-    message(sprintf("Arquivo '%s' extraído e salvo em: %s", basename(files[1]), new_file_path))
-    return(new_file_path)
-  }
-  return(NULL)
-}
-
-# Função para baixar dados auxiliares (ex.: NCM ou países)
-download_auxiliary_data <- function(url, output_file) {
-  response <- GET(url)
-  
-  if (status_code(response) != 200) {
-    stop("Falha no download dos dados auxiliares.")
-  }
-  
-  writeBin(content(response, "raw"), output_file)
-  message(sprintf("Dados auxiliares baixados e salvos em: %s", output_file))
-}
-
-# Limpa o diretório de saída (remover arquivos existentes)
-clean_output_directory <- function(output_dir) {
-  files <- list.files(output_dir, full.names = TRUE)
-  if (length(files) > 0) {
-    file.remove(files)
-  }
-}
-
-# Função para limpar e processar os dados de exportação
-clean_export_data <- function(df) {
-  # Substitui vírgulas por pontos para conversão numérica
-  df <- df %>%
-    mutate(across(c('Pnet(kg)', 'FOB(u$s)'), ~ str_replace_all(., ",", "."))) %>%
-    mutate(across(everything(), ~ str_trim(.)))  # Remove espaços em branco
-  
-  # Marca registros confidenciais
-  df <- df %>%
-    mutate(Confidential = ifelse(str_detect(`Pnet(kg)`, "s") | str_detect(`FOB(u$s)`, "s"), "Yes", "No")) %>%
-    mutate(across(c('Pnet(kg)', 'FOB(u$s)'), ~ as.numeric(str_replace_all(., "s", ""))))
-  
-  return(df)
-}
-
-# Função principal para baixar, processar e salvar os dados do WASDE
+# Função principal para baixar, processar e salvar os dados do INDEC
 fetch_and_process_data <- function() {
   clean_output_directory(DATA_DIR)
   
@@ -101,10 +22,20 @@ fetch_and_process_data <- function() {
   
   # Carrega os dados de exportação e limpa os dados
   csv_files <- list.files(DATA_DIR, pattern = "\\.csv$", full.names = TRUE)
-  export_data <- lapply(csv_files, function(file) {
-    read_csv(file, delim = ";", locale = locale(encoding = "ISO-8859-1"))
-  }) %>%
-    bind_rows() %>%
+  
+  export_data_list <- lapply(csv_files, function(file) {
+    df <- read_delim(file, delim = ";", locale = locale(encoding = "ISO-8859-1"))
+    
+    # Remove linhas que contêm totais ou sumários
+    df <- df %>%
+      filter(!grepl("Total", df$`Pnet(kg)`, ignore.case = TRUE))
+    
+    # Retorna o data frame processado
+    df
+  })
+  
+  # Combina os data frames, assegurando que tenham as mesmas colunas
+  export_data <- bind_rows(export_data_list) %>%
     clean_export_data()
   
   # Carrega e mapeia nomes de países usando o arquivo JSON
