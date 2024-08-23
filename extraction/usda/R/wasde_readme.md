@@ -1,4 +1,3 @@
-
 # Extração de Dados WASDE com R
 
 ## Visão Geral
@@ -19,26 +18,28 @@ Para executar este projeto, você precisará dos seguintes pacotes R:
 
 - **httr**: Para fazer requisições HTTP e baixar os arquivos CSV.
 - **readr**: Para leitura e gravação de arquivos CSV.
-- **stringr**: Para manipulação de strings, como divisão de linhas.
+- **stringr**: Para manipulação de strings.
 - **lubridate**: Para manipulação de datas e horas.
+- **dplyr**: Para manipulação de data frames.
 
 Você pode instalar esses pacotes usando o seguinte comando:
 
 ```r
-install.packages(c("httr", "readr", "stringr", "lubridate"))
+install.packages(c("httr", "readr", "stringr", "lubridate", "dplyr"))
 ```
 
 ## Estrutura dos Dados CSV
 
-Cada arquivo CSV contém várias linhas, com cada linha representando um relatório diferente. Para processar os dados de maneira eficiente, o script verifica se o relatório está na lista de relatórios selecionados (`SELECTED_REPORTS`) antes de salvá-lo no arquivo final.
+Cada arquivo CSV contém várias linhas, com cada linha representando um relatório diferente. O script baixa o conteúdo completo e filtra os relatórios de interesse com base no campo `ReportTitle`.
 
 Exemplo de linha CSV:
 
 ```csv
-2024,08,U.S. Wheat Supply and Use,...,5000000
+WasdeNumber,ReportDate,ReportTitle,Attribute,ReliabilityProjection,Commodity,Region,MarketYear,ProjEstFlag,AnnualQuarterFlag,Value,Unit,ReleaseDate,ReleaseTime,ForecastYear,ForecastMonth
+644,January 2024,"Mexico Sugar Supply and Use and High Fructose Corn Syrup Consumption","Beginning Stocks",,Sugar,World,2023/24,,Annual,1000,Million 480-lb. Bales,2024-01-01,08:00,2024,1
 ```
 
-Esse formato inclui o ano, mês, nome do relatório, e outros dados, como números de produção e consumo.
+Esse formato inclui o título do relatório, commodity, região, ano de mercado, entre outras informações.
 
 ## Estrutura do Código
 
@@ -46,24 +47,20 @@ Esse formato inclui o ano, mês, nome do relatório, e outros dados, como númer
 
 Essa função gera as URLs dos arquivos CSV de todos os meses do ano corrente até o mês atual. As URLs são construídas com base no ano e no mês, usando o formato `ano-mês` (exemplo: `2024-08`).
 
-### 2. **Função `is_selected_report(report_title)`**
+### 2. **Função `process_csv_data(csv_url, output_file)`**
 
-Essa função verifica se o título de um relatório está na lista `SELECTED_REPORTS`. Apenas os relatórios que estão nessa lista serão processados e salvos no arquivo final.
-
-### 3. **Função `process_csv_data(csv_url, output_file)`**
-
-Essa função baixa o arquivo CSV da URL fornecida, processa as linhas e salva no arquivo de saída apenas os relatórios que correspondem aos selecionados. Ela faz o seguinte:
+Essa função baixa o arquivo CSV da URL fornecida, processa todo o conteúdo do arquivo, e filtra apenas os relatórios que correspondem aos títulos de relatórios selecionados, com base na coluna `ReportTitle`. Ela faz o seguinte:
 
 - Faz a requisição HTTP para baixar o arquivo CSV.
-- Divide o conteúdo do arquivo CSV em linhas.
-- Verifica se o relatório pertence à lista de relatórios selecionados.
-- Salva os dados no arquivo CSV final.
+- Lê o CSV completo e o converte em um data frame.
+- Filtra os relatórios que pertencem à lista `SELECTED_REPORTS`.
+- Salva os dados filtrados no arquivo de saída.
 
-### 4. **Função `fetch_and_load_wasde_data_for_this_year()`**
+### 3. **Função `fetch_and_load_wasde_data_for_this_year()`**
 
 Essa é a função principal do script. Ela gera as URLs dos relatórios mensais para o ano corrente, faz o download e processamento dos dados, e salva os resultados no arquivo `OUTPUT_FILE`.
 
-### 5. **Execução do Script**
+### 4. **Execução do Script**
 
 O script verifica se o diretório de saída existe, e se não, cria-o. Em seguida, executa a função principal para processar os dados do WASDE.
 
@@ -101,4 +98,5 @@ SELECTED_REPORTS <- c(
 
 ## Considerações Finais
 
-Este projeto automatiza o processo de download e processamento dos dados dos relatórios WASDE, permitindo uma análise eficiente das previsões agrícolas feitas pelo USDA. Ao combinar ferramentas poderosas como `httr`, `readr` e `lubridate`, é possível obter e preparar grandes volumes de dados de forma simples e escalável.
+Este projeto automatiza o processo de download e processamento dos dados dos relatórios WASDE, permitindo uma análise eficiente das previsões agrícolas feitas pelo USDA. Ao combinar ferramentas poderosas como `httr`, `readr`, `lubridate` e `dplyr`, é possível obter e preparar grandes volumes de dados de forma simples e escalável.
+

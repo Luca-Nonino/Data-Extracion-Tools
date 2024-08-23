@@ -3,6 +3,7 @@ library(httr)  # Para fazer as requisições HTTP
 library(readr)  # Para manipulação de arquivos CSV
 library(stringr)  # Para manipulação de strings
 library(lubridate)  # Para manipulação de datas e horas
+library(dplyr)  # Para manipulação de data frames
 
 # Constantes
 BASE_URL <- "https://www.usda.gov/sites/default/files/documents/oce-wasde-report-data-"
@@ -32,11 +33,6 @@ generate_csv_urls_for_current_year <- function() {
   return(csv_urls)
 }
 
-# Função auxiliar para verificar se um relatório está na lista de relatórios selecionados
-is_selected_report <- function(report_title) {
-  return(report_title %in% SELECTED_REPORTS)
-}
-
 # Função para processar e carregar dados do CSV
 process_csv_data <- function(csv_url, output_file) {
   tryCatch({
@@ -44,24 +40,26 @@ process_csv_data <- function(csv_url, output_file) {
     response <- GET(csv_url)
     stop_for_status(response)  # Verifica se a requisição foi bem-sucedida
     
-    # Lê o conteúdo do CSV
-    csv_content <- content(response, as = "text")
-    csv_lines <- str_split(csv_content, "\n")[[1]]  # Divide o conteúdo em linhas
+    # Lê o CSV inteiro como um data frame
+    csv_content <- content(response, as = "text", encoding = "UTF-8")
+    data <- read_csv(csv_content, col_names = TRUE, show_col_types = FALSE)
     
-    # Abre o arquivo de saída em modo de adição (append)
-    file_conn <- file(output_file, open = "a", encoding = "UTF-8")
+    # Exibe as primeiras linhas e os nomes das colunas para entender o conteúdo
+    print("Colunas encontradas no CSV:")
+    print(names(data))
+    print("Primeiras linhas do CSV:")
+    print(head(data))
     
-    # Processa cada linha do CSV, ignorando o cabeçalho
-    for (line in csv_lines[-1]) {
-      data_fields <- read_csv(line, col_names = FALSE, show_col_types = FALSE)
-      
-      # Verifica se a linha tem 16 campos e se o relatório está na lista selecionada
-      if (ncol(data_fields) == 16 && is_selected_report(data_fields[[3]])) {
-        write_csv(data_fields, file_conn, append = TRUE)  # Escreve a linha no arquivo de saída
-      }
+    # Filtra as linhas com os relatórios desejados (verifique o nome exato da coluna de título)
+    # Ajuste "Report Title" para o nome correto da coluna no CSV.
+    filtered_data <- data %>% filter(`ReportTitle` %in% SELECTED_REPORTS)
+    
+    # Verifica se há dados para salvar
+    if (nrow(filtered_data) > 0) {
+      # Salva o arquivo CSV no modo de adição (append)
+      write_csv(filtered_data, output_file, append = TRUE)
     }
     
-    close(file_conn)  # Fecha a conexão com o arquivo
     return(TRUE)
     
   }, error = function(e) {

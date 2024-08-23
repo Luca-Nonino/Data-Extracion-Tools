@@ -33,19 +33,20 @@ get_api_data <- function(endpoint) {
 fetch_auxiliary_data <- function() {
   # Cria dicionários (listas nomeadas) para mapear códigos aos nomes correspondentes
   regioes <- get_api_data('regions') %>% 
-    setNames(.$regionName, .$regionCode)
+    with(setNames(regionName, regionCode))
   
   paises <- get_api_data('countries') %>% 
-    transmute(countryCode, countryName = .$countryName, regionName = regioes[.$regionCode])
+    mutate(regionName = regioes[regionCode]) %>% 
+    select(countryCode, countryName, regionName)
   
   commodities <- get_api_data('commodities') %>% 
-    setNames(.$commodityName, .$commodityCode)
+    with(setNames(commodityName, commodityCode))
   
   atributos <- get_api_data('commodityAttributes') %>% 
-    setNames(.$attributeName, .$attributeId)
+    with(setNames(attributeName, attributeId))
   
   unidades <- get_api_data('unitsOfMeasure') %>% 
-    setNames(trimws(.$unitDescription), .$unitId)
+    with(setNames(trimws(unitDescription), unitId))
   
   list(paises = paises, commodities = commodities, atributos = atributos, unidades = unidades)
 }
@@ -61,24 +62,31 @@ fetch_forecast_data <- function(commodity_code, ano) {
 
 # Função para processar e salvar os dados no CSV
 process_and_write_data <- function(paises, commodities, atributos, unidades) {
-  # Abre o arquivo CSV para escrita
-  write_csv(tibble(CABECALHOS), OUTPUT_FILE)  # Escreve o cabeçalho no arquivo
+  # Abre o arquivo CSV para escrita com os cabeçalhos
+  write_csv(tibble(), OUTPUT_FILE, col_names = FALSE)  # Cria o arquivo vazio
+  
+  # Escreve os cabeçalhos corretamente no arquivo CSV
+  write_lines(paste(CABECALHOS, collapse = ","), OUTPUT_FILE)  # Escreve os cabeçalhos
   
   # Itera sobre cada código de commodity
   walk(COMMODITIES, function(commodity_code) {
     forecast_data <- fetch_forecast_data(commodity_code, ANO)
     
-    # Processa cada registro da previsão
-    forecast_data %>% 
+    # Junta os dados de previsão com os dados de países para obter countryName e regionName
+    forecast_data <- forecast_data %>%
+      left_join(paises, by = "countryCode") %>%
       mutate(
         commodityName = commodities[commodityCode],
         attributeName = atributos[attributeId],
         unitDescription = unidades[unitId],
-        countryName = if_else(countryCode == "00", "World", paises$countryName[paises$countryCode == countryCode]),
-        regionName = if_else(countryCode == "00", "Global", paises$regionName[paises$countryCode == countryCode])
-      ) %>% 
-      select(all_of(CABECALHOS)) %>% 
-      write_csv(OUTPUT_FILE, append = TRUE)
+        countryName = if_else(countryCode == "00", "World", countryName),
+        regionName = if_else(countryCode == "00", "Global", regionName)
+      )
+    
+    # Seleciona as colunas desejadas e salva no CSV
+    forecast_data %>%
+      select(all_of(CABECALHOS)) %>%
+      write_csv(OUTPUT_FILE, append = TRUE, col_names = FALSE)  # Adiciona os dados sem reescrever os cabeçalhos
   })
 }
 
